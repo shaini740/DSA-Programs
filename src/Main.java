@@ -1,7 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-
-
+//////////////////////////  Linked List  ////////////////////////////////////////////
         LinkedList linkedList = new LinkedList(1);
 
         linkedList.append(2);
@@ -37,5 +36,35 @@ public class Main {
 
         System.out.println("Linked List After removing first and last Node :");
         linkedList.printLinkedList();
+
+////////////////////// Doubly Linked List //////////////////////////////////////////////////////
+        DoublyLinkedList doublyLinkedList = new DoublyLinkedList(1);
+        doublyLinkedList.append(2);
+        doublyLinkedList.append(3);
+        doublyLinkedList.append(4);
+        doublyLinkedList.prepend(5);
+        doublyLinkedList.prepend(6);
+        doublyLinkedList.printDoublyLinkedList();
+
+        System.out.println("The Node removed at the First is "+doublyLinkedList.removeFirst().value);
+        doublyLinkedList.printDoublyLinkedList();
+
+        System.out.println("The Node removed at the Last is "+doublyLinkedList.removeLast().value);
+        doublyLinkedList.printDoublyLinkedList();
+
+        System.out.println("The Value of the Node at the Position 2 is "+doublyLinkedList.getNodes(2).value);
+
+        System.out.println("The Value set at the Position 2 is "+doublyLinkedList.setNode(2,10).value);
+        doublyLinkedList.printDoublyLinkedList();
+
+        boolean isNodeInserted = doublyLinkedList.insertNode(2,20);
+        if(isNodeInserted){
+            System.out.println("Node is Inserted");
+        }
+        doublyLinkedList.printDoublyLinkedList();
+
+        System.out.println("The Node is removed from Position 2  is "+doublyLinkedList.removeNode(2).value);
+        doublyLinkedList.printDoublyLinkedList();
     }
+
 }
