@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-//////////////////////////  Linked List  ////////////////////////////////////////////
+////////////////////////  Linked List  ////////////////////////////////////////////
         LinkedList linkedList = new LinkedList(1);
 
         linkedList.append(2);
@@ -65,6 +65,15 @@ public class Main {
 
         System.out.println("The Node is removed from Position 2  is "+doublyLinkedList.removeNode(2).value);
         doublyLinkedList.printDoublyLinkedList();
-    }
 
+
+        ///////////////////////////Stacks///////////////////////////////////////////////////
+        Stacks stack = new Stacks(1);
+        stack.push(2);
+        stack.push(10);
+        System.out.println("The Stack Before Pop : ");
+        stack.printStack();
+        System.out.println("The Stack After Pop of Top Itemm "+stack.pop().value);
+        stack.printStack();
+    }
 }
