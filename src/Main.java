@@ -75,5 +75,16 @@ public class Main {
         stack.printStack();
         System.out.println("The Stack After Pop of Top Itemm "+stack.pop().value);
         stack.printStack();
+
+
+        ////////////////////////////////Queue////////////////////////////////////////////
+        Queue queue = new Queue(10);
+        queue.Enqueue(20);
+        queue.Enqueue(30);
+        queue.Enqueue(40);
+        System.out.println("The Stack Before Dqueue : ");
+        queue.printQueue();
+        System.out.println("The Stack After Dqueue of first Itemm  in Queue is "+queue.Dequeue().value);
+        queue.printQueue();
     }
 }
