@@ -86,5 +86,24 @@ public class Main {
         queue.printQueue();
         System.out.println("The Stack After Dqueue of first Itemm  in Queue is "+queue.Dequeue().value);
         queue.printQueue();
+
+
+        ////////////////////////////////BST/////////////////////////////////////////////////////
+        BinarySearchTree binarySearchTree = new BinarySearchTree();
+        binarySearchTree.insertTreeNodes(45);
+        binarySearchTree.insertTreeNodes(20);
+        binarySearchTree.insertTreeNodes(52);
+        binarySearchTree.insertTreeNodes(74);
+        binarySearchTree.insertTreeNodes(78);
+        binarySearchTree.insertTreeNodes(85);
+        binarySearchTree.insertTreeNodes(10);
+        binarySearchTree.insertTreeNodes(30);
+        binarySearchTree.insertTreeNodes(15);
+        binarySearchTree.insertTreeNodes(89);
+
+        System.out.println("The Value of Rooot : "+binarySearchTree.root.value);
+        System.out.println("The Value of Root of left of right : "+binarySearchTree.root.left.right.value);
+        System.out.println("BST contains 80 : "+binarySearchTree.contains(80));
+        System.out.println("BST contains 10: "+binarySearchTree.contains(10));
     }
 }
